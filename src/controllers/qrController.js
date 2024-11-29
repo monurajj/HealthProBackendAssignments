@@ -12,7 +12,7 @@ const generateDynamicQR = async (req, res) => {
   res.json({ qrCode, dynamicQRId: qr._id });
 };
 
-// Update Dynamic QR Code URL
+//to Updating Dynamic QR Code URL
 const updateDynamicQR = async (req, res) => {
   const { id } = req.params;
   const { newUrl } = req.body;
@@ -23,7 +23,7 @@ const updateDynamicQR = async (req, res) => {
   res.json({ message: 'QR code updated successfully' });
 };
 
-// Track QR Code Scan Event
+// to track QR Code Scan Event
 const trackEvent = async (req, res) => {
   const { id } = req.params;
   const { location, deviceInfo } = req.body;
